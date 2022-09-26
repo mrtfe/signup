@@ -91,6 +91,7 @@ input:focus {
 
 .psw-error {
   color: rgb(243, 73, 73);
+  font-size: 12px;
   margin-top: -19px;
   display: none;
 }
