@@ -1,9 +1,15 @@
 html {
-  background-color: rgb(143, 126, 125);
+  background: linear-gradient(
+    178.6deg,
+    rgb(11, 18, 26) 11.8%,
+    rgb(97, 112, 126) 83.8%
+  );
+  font-family: monospace;
 }
 
 body {
   color: white;
+  margin: 0;
 }
 
 .background-container {
@@ -11,23 +17,25 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 300px;
-  height: 800px;
+  width: 400px;
+  height: 700px;
 }
 
 .logo-container {
-  max-width: 100%;
+  width: 100%;
   font-size: 30px;
-  color: rgba(255, 255, 255, 0.527);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.788);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
   margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.678);
 }
 
 .logo-img {
-  opacity: 0.7;
+  opacity: 0.6;
   max-width: 50%;
 }
 
@@ -36,13 +44,71 @@ body {
   gap: 30px;
 }
 
+.form-header {
+  margin-top: 50px;
+  font-size: 25px;
+  max-width: 80%;
+}
+
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+.form-label {
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 form div {
   display: flex;
   flex-direction: column;
-  width: 40%;
+}
+
+.confirm-psw {
+  white-space: nowrap;
+}
+
+label {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+input {
+  width: 70%;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.712);
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 3px #0505059a;
+}
+
+.psw-error {
+  color: rgb(243, 73, 73);
+  margin-top: -19px;
+  display: none;
+}
+
+.psw-error-border {
+  border: 1px solid red;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.815);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  max-width: 70%;
+}
+
+a {
+  color: rgb(11, 18, 26);
+  font-weight: 700;
+  font-size: 16px;
 }
