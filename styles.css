@@ -1,3 +1,48 @@
 html {
-  background-color: salmon;
+  background-color: rgb(143, 126, 125);
+}
+
+body {
+  color: white;
+}
+
+.background-container {
+  background-image: url(/images/background-moon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  height: 800px;
+}
+
+.logo-container {
+  max-width: 100%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.527);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.logo-img {
+  opacity: 0.7;
+  max-width: 50%;
+}
+
+.page-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
