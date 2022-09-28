@@ -7,10 +7,8 @@ function checkPassword(e) {
     document.querySelector(".psw-error").style.display = "block";
     PSW1.classList.add("psw-error-border");
     PSW2.classList.add("psw-error-border");
-    console.log("passwords did not match");
     e.preventDefault();
   } else document.querySelector(".psw-error").style.display = "none";
-  console.log("passwords OK");
 }
 
 CREATE_ACC_BTN.addEventListener("click", checkPassword);
